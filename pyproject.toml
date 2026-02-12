@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "duce-cli"
+version = "2.3.6"
+description = "Automatically enroll in free Udemy courses"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+    {name = "Ahmed Elzainy", email = "ahmedelzainy44@gmail.com"}
+]
+keywords = ["udemy", "courses", "education", "automation"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: End Users/Desktop",
+    "Topic :: Education",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+]
+dependencies = [
+    "marimo>=0.19.11",
+]
+
+[project.urls]
+Homepage = "https://github.com/Ahmed-El-Zainy/Discounted-Udemy-Course-Enroller"
+Documentation = "https://Ahmed-El-Zainy.github.io/duce/"
+Repository = "https://github.com/Ahmed-El-Zainy/Discounted-Udemy-Course-Enroller"
+"Bug Tracker" = "https://github.com/Ahmed-El-Zainy/Discounted-Udemy-Course-Enroller/issues"
+
+[project.scripts]
+duce = "duce.cli:main"
+duce-gui = "duce.gui:main"
