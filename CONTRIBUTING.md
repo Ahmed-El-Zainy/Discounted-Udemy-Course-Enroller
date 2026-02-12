@@ -9,4 +9,23 @@ If you have a bug report, please describe the issue you are experiencing, and pr
 Thank you for your interest in contributing to the project! I appreciate your help in making the project better for everyone.
 
 
-
+discounted-udemy-course-enroller/
+├── duce/                       # Main package directory
+│   ├── __init__.py            # Package initialization
+│   ├── __main__.py            # Entry point for `python -m duce`
+│   ├── cli.py                 # CLI interface
+│   ├── base.py                # Core functionality
+│   ├── colors.py              # Color utilities
+│   ├── images.py              # GUI images (optional for CLI)
+│   └── config/                # Configuration
+│       ├── __init__.py
+│       ├── default-duce-cli-settings.json
+│       └── default-duce-gui-settings.json
+├── setup.py                   # Installation script
+├── setup.cfg                  # Setup configuration
+├── pyproject.toml            # Modern Python project file
+├── requirements.txt          # Dependencies
+├── MANIFEST.in               # Include non-Python files
+├── README.md                 # Documentation
+├── LICENSE                   # License file
+└── .gitignore               # Git ignore file
